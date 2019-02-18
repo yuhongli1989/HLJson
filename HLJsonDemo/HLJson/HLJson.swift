@@ -9,7 +9,7 @@
 import UIKit
 
 @dynamicMemberLookup
-struct JSON {
+public struct JSON {
     
     public enum TYPE:Equatable {
         case number(NSNumber)
@@ -48,7 +48,7 @@ struct JSON {
         }
     }
     
-    var count:Int{
+    public var count:Int{
         switch type {
         case .null:
             return 0
@@ -78,30 +78,37 @@ struct JSON {
             }else{
                 type = TYPE(str)
             }
+        }else if let data = object as?Data{
+            do {
+                let object = try JSONSerialization.jsonObject(with: data, options: [])
+                type = TYPE(object)
+            } catch  {
+                type = TYPE.null
+            }
         }else{
             type = TYPE(object)
         }
 
     }
     
-    init(_ data:Data) {
-        let object:Any?
-        do {
-            object = try JSONSerialization.jsonObject(with: data, options: [])
-        } catch  {
-            object = nil
-        }
-        self.init(object)
-    }
+//    init(_ data:Data) {
+//        let object:Any?
+//        do {
+//            object = try JSONSerialization.jsonObject(with: data, options: [])
+//        } catch  {
+//            object = nil
+//        }
+//        self.init(object)
+//    }
 }
 
 extension JSON{
     
-    var isNull:Bool{
+    public var isNull:Bool{
         return type == TYPE.null
     }
     
-    var int:Int?{
+    public var int:Int?{
         get{
             if case .number(let num) = type{
                 return num.intValue
@@ -117,7 +124,7 @@ extension JSON{
         }
     }
     
-    var float:Float?{
+    public var float:Float?{
         get{
             if case .number(let num) = type{
                 return num.floatValue
@@ -133,7 +140,7 @@ extension JSON{
         }
     }
     
-    var double:Double?{
+    public var double:Double?{
         get{
             if case .number(let num) = type{
                 return num.doubleValue
@@ -149,7 +156,7 @@ extension JSON{
         }
     }
     
-    var string:String?{
+    public var string:String?{
         get{
             if case .string(let str) = type{
                 return str
@@ -165,7 +172,7 @@ extension JSON{
         }
     }
     
-    var bool:Bool?{
+    public var bool:Bool?{
         get{
             if case .number(let b) = type{
                 return b != 0
@@ -181,7 +188,7 @@ extension JSON{
         }
     }
     
-    var array:[JSON]?{
+    public var array:[JSON]?{
         get{
             if case .array(let arr) = type{
                 return arr
@@ -196,7 +203,7 @@ extension JSON{
             }
         }
     }
-    var dictionary:[String:JSON]?{
+    public var dictionary:[String:JSON]?{
         get{
             if case let .dictionary(dic) = type{
                 return dic
@@ -215,7 +222,7 @@ extension JSON{
 
 extension JSON{
     
-    subscript(index:Int)->JSON{
+    public subscript(index:Int)->JSON{
         get{
             if case .array(let arr) = type{
                 return (index<arr.count && index>=0) ? arr[index]:JSON(nil)
@@ -233,7 +240,7 @@ extension JSON{
         }
         
     }
-    subscript(dynamicMember key:String)->JSON{
+    public subscript(dynamicMember key:String)->JSON{
         get{
             if case .dictionary(let dic) = type{
                 return dic[key] ?? JSON(nil)
@@ -249,7 +256,7 @@ extension JSON{
         }
     }
     
-    subscript(key:String)->JSON{
+    public subscript(key:String)->JSON{
         get{
             if case .dictionary(let dic) = type{
                 return dic[key] ?? JSON(nil)
@@ -334,7 +341,7 @@ extension JSON:Equatable{
 
 extension JSON:CustomDebugStringConvertible,CustomStringConvertible{
     
-    var description: String{
+    public var description: String{
         switch type {
         case .null:
             return "null"
@@ -349,14 +356,14 @@ extension JSON:CustomDebugStringConvertible,CustomStringConvertible{
         }
     }
     
-    var debugDescription: String{
+    public var debugDescription: String{
         return description
     }
     
 }
 
 extension JSON{
-    var stringJson:String?{
+    public var stringJson:String?{
         let encoder = JSONEncoder()
         if let data = try? encoder.encode(self){
             let str = String(data: data, encoding: .utf8)
@@ -370,7 +377,7 @@ extension JSON{
 
 extension JSON:Codable {
     
-    func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: Encoder) throws {
         
         var container = encoder.singleValueContainer()
         if case TYPE.null = self.type {
@@ -416,7 +423,7 @@ extension JSON:Codable {
         ]
     }
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         var object: Any?
         if let container = try? decoder.singleValueContainer(), !container.decodeNil() {
             
