@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D87F9C12218014A00B6FB50 /* NullJSONTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87F9C02218014A00B6FB50 /* NullJSONTest.swift */; };
+		6D87F9C2221801C700B6FB50 /* HLJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C111C2216E60D0030CCE2 /* HLJson.swift */; };
+		6D87F9C42218051000B6FB50 /* TestA.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D87F9C32218051000B6FB50 /* TestA.json */; };
+		6D87F9C6221807B800B6FB50 /* NumberJSONTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87F9C5221807B800B6FB50 /* NumberJSONTest.swift */; };
+		6D87F9C82219312000B6FB50 /* StringJSONTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87F9C72219312000B6FB50 /* StringJSONTest.swift */; };
+		6D87F9CA22195B1E00B6FB50 /* DictionaryJSONTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87F9C922195B1E00B6FB50 /* DictionaryJSONTest.swift */; };
+		6D87F9CC221964E600B6FB50 /* ArrayJSONTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87F9CB221964E600B6FB50 /* ArrayJSONTest.swift */; };
+		6D87F9CE221A3F3200B6FB50 /* CodableJSONTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87F9CD221A3F3100B6FB50 /* CodableJSONTest.swift */; };
 		DF7C110A2216E5D80030CCE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C11092216E5D80030CCE2 /* AppDelegate.swift */; };
 		DF7C110C2216E5D80030CCE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C110B2216E5D80030CCE2 /* ViewController.swift */; };
 		DF7C110F2216E5D80030CCE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C110D2216E5D80030CCE2 /* Main.storyboard */; };
@@ -15,7 +23,26 @@
 		DF7C111D2216E60D0030CCE2 /* HLJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C111C2216E60D0030CCE2 /* HLJson.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6D87F9BB2217FF7800B6FB50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF7C10FE2216E5D80030CCE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF7C11052216E5D80030CCE2;
+			remoteInfo = HLJsonDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6D87F9B62217FF7800B6FB50 /* HLJsonDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLJsonDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D87F9BA2217FF7800B6FB50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D87F9C02218014A00B6FB50 /* NullJSONTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullJSONTest.swift; sourceTree = "<group>"; };
+		6D87F9C32218051000B6FB50 /* TestA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestA.json; sourceTree = "<group>"; };
+		6D87F9C5221807B800B6FB50 /* NumberJSONTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberJSONTest.swift; sourceTree = "<group>"; };
+		6D87F9C72219312000B6FB50 /* StringJSONTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringJSONTest.swift; sourceTree = "<group>"; };
+		6D87F9C922195B1E00B6FB50 /* DictionaryJSONTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryJSONTest.swift; sourceTree = "<group>"; };
+		6D87F9CB221964E600B6FB50 /* ArrayJSONTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayJSONTest.swift; sourceTree = "<group>"; };
+		6D87F9CD221A3F3100B6FB50 /* CodableJSONTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableJSONTest.swift; sourceTree = "<group>"; };
 		DF7C11062216E5D80030CCE2 /* HLJsonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLJsonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7C11092216E5D80030CCE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF7C110B2216E5D80030CCE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6D87F9B32217FF7800B6FB50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF7C11032216E5D80030CCE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +71,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D87F9B72217FF7800B6FB50 /* HLJsonDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D87F9BA2217FF7800B6FB50 /* Info.plist */,
+				6D87F9C02218014A00B6FB50 /* NullJSONTest.swift */,
+				6D87F9C32218051000B6FB50 /* TestA.json */,
+				6D87F9C5221807B800B6FB50 /* NumberJSONTest.swift */,
+				6D87F9C72219312000B6FB50 /* StringJSONTest.swift */,
+				6D87F9C922195B1E00B6FB50 /* DictionaryJSONTest.swift */,
+				6D87F9CB221964E600B6FB50 /* ArrayJSONTest.swift */,
+				6D87F9CD221A3F3100B6FB50 /* CodableJSONTest.swift */,
+			);
+			path = HLJsonDemoTests;
+			sourceTree = "<group>";
+		};
 		DF7C10FD2216E5D80030CCE2 = {
 			isa = PBXGroup;
 			children = (
 				DF7C11082216E5D80030CCE2 /* HLJsonDemo */,
+				6D87F9B72217FF7800B6FB50 /* HLJsonDemoTests */,
 				DF7C11072216E5D80030CCE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DF7C11062216E5D80030CCE2 /* HLJsonDemo.app */,
+				6D87F9B62217FF7800B6FB50 /* HLJsonDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +129,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6D87F9B52217FF7800B6FB50 /* HLJsonDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D87F9BD2217FF7800B6FB50 /* Build configuration list for PBXNativeTarget "HLJsonDemoTests" */;
+			buildPhases = (
+				6D87F9B22217FF7800B6FB50 /* Sources */,
+				6D87F9B32217FF7800B6FB50 /* Frameworks */,
+				6D87F9B42217FF7800B6FB50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D87F9BC2217FF7800B6FB50 /* PBXTargetDependency */,
+			);
+			name = HLJsonDemoTests;
+			productName = HLJsonDemoTests;
+			productReference = 6D87F9B62217FF7800B6FB50 /* HLJsonDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DF7C11052216E5D80030CCE2 /* HLJsonDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF7C11182216E5DC0030CCE2 /* Build configuration list for PBXNativeTarget "HLJsonDemo" */;
@@ -105,6 +174,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = yuhongli;
 				TargetAttributes = {
+					6D87F9B52217FF7800B6FB50 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DF7C11052216E5D80030CCE2;
+					};
 					DF7C11052216E5D80030CCE2 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -124,11 +197,20 @@
 			projectRoot = "";
 			targets = (
 				DF7C11052216E5D80030CCE2 /* HLJsonDemo */,
+				6D87F9B52217FF7800B6FB50 /* HLJsonDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6D87F9B42217FF7800B6FB50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D87F9C42218051000B6FB50 /* TestA.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF7C11042216E5D80030CCE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +224,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6D87F9B22217FF7800B6FB50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D87F9C82219312000B6FB50 /* StringJSONTest.swift in Sources */,
+				6D87F9CC221964E600B6FB50 /* ArrayJSONTest.swift in Sources */,
+				6D87F9C6221807B800B6FB50 /* NumberJSONTest.swift in Sources */,
+				6D87F9C2221801C700B6FB50 /* HLJson.swift in Sources */,
+				6D87F9CA22195B1E00B6FB50 /* DictionaryJSONTest.swift in Sources */,
+				6D87F9CE221A3F3200B6FB50 /* CodableJSONTest.swift in Sources */,
+				6D87F9C12218014A00B6FB50 /* NullJSONTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DF7C11022216E5D80030CCE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +249,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D87F9BC2217FF7800B6FB50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF7C11052216E5D80030CCE2 /* HLJsonDemo */;
+			targetProxy = 6D87F9BB2217FF7800B6FB50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DF7C110D2216E5D80030CCE2 /* Main.storyboard */ = {
@@ -174,6 +278,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6D87F9BE2217FF7800B6FB50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HLJsonDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunfu.HLJsonDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLJsonDemo.app/HLJsonDemo";
+			};
+			name = Debug;
+		};
+		6D87F9BF2217FF7800B6FB50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HLJsonDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunfu.HLJsonDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLJsonDemo.app/HLJsonDemo";
+			};
+			name = Release;
+		};
 		DF7C11162216E5DC0030CCE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -327,6 +469,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6D87F9BD2217FF7800B6FB50 /* Build configuration list for PBXNativeTarget "HLJsonDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D87F9BE2217FF7800B6FB50 /* Debug */,
+				6D87F9BF2217FF7800B6FB50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DF7C11012216E5D80030CCE2 /* Build configuration list for PBXProject "HLJsonDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
