@@ -91,15 +91,6 @@ public struct JSON {
 
     }
     
-//    init(_ data:Data) {
-//        let object:Any?
-//        do {
-//            object = try JSONSerialization.jsonObject(with: data, options: [])
-//        } catch  {
-//            object = nil
-//        }
-//        self.init(object)
-//    }
 }
 
 extension JSON{
@@ -311,7 +302,6 @@ extension JSON: Swift.ExpressibleByDictionaryLiteral {
 extension JSON: Swift.ExpressibleByArrayLiteral {
     
     public init(arrayLiteral elements: Any...) {
-//        print(elements)
         self.init(elements)
     }
 }
